@@ -27,15 +27,15 @@ app.get('/js', (req, res) => {
 })
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/Register/Register.html'))
-    // cl('HTML RegisterPage Sent To Server')
+    cl('HTML RegisterPage Sent To Server')
 })
 app.get('/style2', (req, res) => {
     res.sendFile(path.join(__dirname, '/Register/Register.css'))
-    // cl('CSS For HtmlPage Sent To Server')
+    cl('CSS For HtmlPage Sent To Server')
 })
 app.get('/js2', (req, res) => {
     res.sendFile(path.join(__dirname, '/Register/Register.js'))
-    // cl('JavaScript For RegisterPage Sent To Server')
+    cl('JavaScript For RegisterPage Sent To Server')
 })
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '/Login/Login.html'))
@@ -43,11 +43,11 @@ app.get('/login', (req, res) => {
 })
 app.get('/style3', (req, res) => {
     res.sendFile(path.join(__dirname, '/Login/Login.css'))
-    // cl('HTML Log-in Page Sent To Server')
+    cl('HTML Log-in Page Sent To Server')
 })
 app.get('/js3', (req, res) => {
     res.sendFile(path.join(__dirname, '/Login/Login.js'))
-    // cl('HTML Log-in Page Sent To Server')
+    cl('HTML Log-in Page Sent To Server')
 })
 const {RegUser, getAllUserInfo, checkingPassword} = require('./controller.js')
 
