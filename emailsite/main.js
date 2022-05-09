@@ -8,7 +8,7 @@ const bigForm = document.getElementById('BigForm')
 emailjs.init('YV8k2_428YWlFRKkm')
 axios.get('/usernames')
 .then((res) => {
-    if(UserID){
+    if(UserID != undefined){
      let UserID = parseInt(window.localStorage.getItem('Number'))
     let ThisUser = res.data[UserID]
    const {Name,Email,UserName} = ThisUser 
