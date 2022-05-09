@@ -11,7 +11,7 @@ app.use(cors())
 const serverNumber = 3456
 app.get('/email', (req, res) => {
     res.sendFile(path.join(__dirname, '/emailsite/main.html'))
-    // cl('We got the html through')
+    cl('We got the html through')
 })
 app.get('/style', (req, res) => {
     res.sendFile(path.join(__dirname, '/emailsite/main.css'))
@@ -46,10 +46,12 @@ app.get('/js3', (req, res) => {
     // cl('HTML Log-in Page Sent To Server')
 })
 const {RegUser, getAllUserInfo, checkingPassword} = require('./controller.js')
-// we need to figure out how to get the server to work fuck
+
 app.get('/usernames',   getAllUserInfo)
 app.post('/usernames', RegUser)
 app.post('/verfy',checkingPassword)
 app.listen(serverNumber, () => { cl(`running on port ${serverNumber}
 heres a cute copy paste so its easy to get to
  localhost:${serverNumber} `)})
+// git remote -v
+// heroku git:remote -a toemailazari

@@ -30,7 +30,7 @@ UsernamesFile.push({
     HashedPassword: 'N/A',
     UniqueID:3
 })
-  cl(UsernamesFile)
+  
 let UniqueID = 4
 
 
