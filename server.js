@@ -39,14 +39,14 @@ app.get('/js2', (req, res) => {
 })
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '/Login/Login.html'))
-    // cl('HTML Log-in Page Sent To Server')
+     cl('HTML Log-in Page Sent To Server')
 })
 app.get('/style3', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Log-in/Login.css'))
+    res.sendFile(path.join(__dirname, '/Login/Login.css'))
     // cl('HTML Log-in Page Sent To Server')
 })
 app.get('/js3', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Log-in/Login.js'))
+    res.sendFile(path.join(__dirname, '/Login/Login.js'))
     // cl('HTML Log-in Page Sent To Server')
 })
 const {RegUser, getAllUserInfo, checkingPassword} = require('./controller.js')
@@ -61,7 +61,7 @@ heres a cute copy paste so its easy to get to
 // heroku git:remote -a toemailazari
 
 
-
+// 2022-05-09T05:50:36.411699+00:00 app[web.1]: Error: ENOENT: no such file or directory, stat '/app/Login/Login.html'
 
 // git init
 // git add .
