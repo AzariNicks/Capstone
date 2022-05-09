@@ -46,7 +46,7 @@ app.get('/js3', (req, res) => {
     // cl('HTML Log-in Page Sent To Server')
 })
 const {RegUser, getAllUserInfo, checkingPassword} = require('./controller.js')
-
+// we need to figure out how to get the server to work fuck
 app.get('/usernames',   getAllUserInfo)
 app.post('/usernames', RegUser)
 app.post('/verfy',checkingPassword)
