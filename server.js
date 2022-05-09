@@ -25,18 +25,18 @@ app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '/emailsite/main.js'))
     // cl('We got the JavaScript Through')
 })
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Register/Register.html'))
-    cl('HTML RegisterPage Sent To Server')
-})
-app.get('/style2', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Register/Register.css'))
-    cl('CSS For HtmlPage Sent To Server')
-})
-app.get('/js2', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Register/Register.js'))
-    cl('JavaScript For RegisterPage Sent To Server')
-})
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, '/Register/Register.html'))
+//     cl('HTML RegisterPage Sent To Server')
+// })
+// app.get('/style2', (req, res) => {
+//     res.sendFile(path.join(__dirname, '/Register/Register.css'))
+//     cl('CSS For HtmlPage Sent To Server')
+// })
+// app.get('/js2', (req, res) => {
+//     res.sendFile(path.join(__dirname, '/Register/Register.js'))
+//     cl('JavaScript For RegisterPage Sent To Server')
+// })
 app.get('/log-in', (req, res) => {
     res.sendFile(path.join(__dirname, '/Login/Login.html'))
      cl('HTML Log-in Page Sent To Server')
@@ -65,7 +65,7 @@ heres a cute copy paste so its easy to get to
 /*
 git init
 git add .
-git commit -m "changed directions "
+git commit -m "Deleted 3 gets"
 git push heroku master
 
 
