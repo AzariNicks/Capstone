@@ -38,15 +38,15 @@ app.get('/js2', (req, res) => {
     cl('JavaScript For RegisterPage Sent To Server')
 })
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Login/Login.html'))
+    res.sendFile(path.join(__dirname, '/Anythinelse/Login.html'))
      cl('HTML Log-in Page Sent To Server')
 })
 app.get('/style3', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Login/Login.css'))
+    res.sendFile(path.join(__dirname, '/Anythinelse/Login.css'))
     cl('HTML Log-in Page Sent To Server')
 })
 app.get('/js3', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Login/Login.js'))
+    res.sendFile(path.join(__dirname, '/Anythinelse/Login.js'))
     cl('HTML Log-in Page Sent To Server')
 })
 const {RegUser, getAllUserInfo, checkingPassword} = require('./controller.js')
@@ -65,7 +65,7 @@ heres a cute copy paste so its easy to get to
 /*
 git init
 git add .
-git commit -m "added Dot 3"
+git commit -m "changed name"
 git push heroku master
 
 
