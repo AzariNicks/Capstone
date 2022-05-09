@@ -13,24 +13,35 @@ const submitButton = document.getElementById('submitLogin')
 const Wholeform = document.getElementById('wholeform')
 submitButton.addEventListener('click', (event) => {event.preventDefault()
 console.log(nameInput.value,  emailInput.value, usernameInput.value)
+if(nameInput.length < 5 || usernameInput.length < 5 || emailInput.length < 5 || passwordInput < 5){
+    alert('All Feilds Required more than 5 characters')
+    return
+}
+else{
+cl('everything is more than 5')
 
 
- const body = { 
+
+
+ const body = {
+
    Name:nameInput.value, Email:emailInput.value, UserName:usernameInput.value
 ,Password:passwordInput.value
 }
 axios.post(`http://localhost:3456/usernames`,body)
-.then(res => {console.log(res.data)
-    .status(200).send(res.data)
+
+
+.then(res => {
+    
+   if(typeof res.data === 'string'){alert(res.data)} 
+   else{
+         window.location.href = "http://www.localhost:3456/log-in"
+        console.log(res.data)
+        .status(200).send(res.data)}
 })
 .catch(err => {
     console.log(err)
 })
-
-
-window.location.href = "http://www.localhost:3456/email"
-
-
-
-})
+// fix this when you upload it to thingy 
+}})
 

@@ -45,11 +45,11 @@ app.get('/js3', (req, res) => {
     res.sendFile(path.join(__dirname, '/Log-in/Login.js'))
     // cl('HTML Log-in Page Sent To Server')
 })
-const {sendUserInfo, getAllUserInfo} = require('./controller.js')
+const {RegUser, getAllUserInfo, checkingPassword} = require('./controller.js')
 
-
-app.post('/usernames', sendUserInfo)
-app.get('/usernames',getAllUserInfo)
+app.get('/usernames',   getAllUserInfo)
+app.post('/usernames', RegUser)
+app.post('/verfy',checkingPassword)
 app.listen(serverNumber, () => { cl(`running on port ${serverNumber}
 heres a cute copy paste so its easy to get to
  localhost:${serverNumber} `)})
