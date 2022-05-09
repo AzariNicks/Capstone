@@ -65,7 +65,7 @@ heres a cute copy paste so its easy to get to
 /*
 git init
 git add .
-git commit -m "saved the login"
+git commit -m "changed email to accept anon"
 git push heroku master
 DONE
 

@@ -8,6 +8,7 @@ const bigForm = document.getElementById('BigForm')
 emailjs.init('YV8k2_428YWlFRKkm')
 axios.get('/usernames')
 .then((res) => {
+    if(UserID){
      let UserID = parseInt(window.localStorage.getItem('Number'))
     let ThisUser = res.data[UserID]
    const {Name,Email,UserName} = ThisUser 
@@ -27,7 +28,24 @@ axios.get('/usernames')
 
             .then( (res) => {console.log('Nice Everything is working' , res.status , res.text)})
             , () => {console.log('Bruh its not working', error())}
-        })
+        })}
+        else{
+            submit.addEventListener('click' , event => {event.preventDefault()
+                // console.log(`right now you have the stuff commeted out but this would email you ${mailcont.value}`)
+                        emailjs.send('Azari_emailServer', 'contact_form' , {
+                        from_name:`Anon`,
+                        message: mailcont.value,
+                        user_email: `Anon`
+                })
+                alert(`${UserName} You've sent the email as ${Email}`)
+        
+        
+                    .then( (res) => {console.log('Nice Everything is working' , res.status , res.text)})
+                    , () => {console.log('Bruh its not working', error())}
+                })
+
+            
+        }
 })
 
 
