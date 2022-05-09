@@ -25,10 +25,10 @@ app.use(express.static(path.join(__dirname, 'capstone')))
 //     res.sendFile(path.join(__dirname, '/emailsite/main.js'))
 //     // cl('We got the JavaScript Through')
 // })
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/Register/Register.html'))
-//     // cl('HTML RegisterPage Sent To Server')
-// })
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/Register/Register.html'))
+    // cl('HTML RegisterPage Sent To Server')
+})
 // app.get('/style2', (req, res) => {
 //     res.sendFile(path.join(__dirname, '/Register/Register.css'))
 //     // cl('CSS For HtmlPage Sent To Server')
