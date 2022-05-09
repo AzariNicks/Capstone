@@ -37,8 +37,8 @@ app.get('/js2', (req, res) => {
     res.sendFile(path.join(__dirname, '/Register/Register.js'))
     // cl('JavaScript For RegisterPage Sent To Server')
 })
-app.get('/Log-in', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Log-in/Login.html'))
+app.get('/Login', (req, res) => {
+    res.sendFile(path.join(__dirname, '/Login/Login.html'))
     // cl('HTML Log-in Page Sent To Server')
 })
 app.get('/style3', (req, res) => {
@@ -65,6 +65,6 @@ heres a cute copy paste so its easy to get to
 
 // git init
 // git add .
-// git commit -m "CHANGED a get to have Log-in"
+// git commit -m "CHANGED a get to have Login"
 // git push heroku master
 // DONE 

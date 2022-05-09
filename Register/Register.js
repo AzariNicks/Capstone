@@ -6,6 +6,9 @@ const cl2 = () => { cl('hello this thing is working')}
 // const NameInput = getDocId('name')
 // NameInput.addEventListener('click' , cl2)
 const BaseUrl = `https://toemailazari.herokuapp.com`
+
+
+
 const usernameInput = document.getElementById(`username`)
 const passwordInput = document.getElementById(`SuperSecret`)
 const emailInput = document.getElementById(`email`)
