@@ -5,6 +5,7 @@ const cl2 = () => { cl('hello this thing is working')}
 
 // const NameInput = getDocId('name')
 // NameInput.addEventListener('click' , cl2)
+const BaseUrl = `https://toemailazari.herokuapp.com`
 const usernameInput = document.getElementById(`username`)
 const passwordInput = document.getElementById(`SuperSecret`)
 const emailInput = document.getElementById(`email`)
@@ -28,14 +29,14 @@ cl('everything is more than 5')
    Name:nameInput.value, Email:emailInput.value, UserName:usernameInput.value
 ,Password:passwordInput.value
 }
-axios.post(`http://localhost:3456/usernames`,body)
+axios.post(`${BaseUrl}/usernames`,body)
 
 
 .then(res => {
     
    if(typeof res.data === 'string'){alert(res.data)} 
    else{
-         window.location.href = "http://www.localhost:3456/log-in"
+         window.location.href = "https://toemailazari.herokuapp.com/log-in"
         console.log(res.data)
         .status(200).send(res.data)}
 })
