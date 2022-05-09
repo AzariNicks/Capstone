@@ -6,6 +6,9 @@ const express = require('express')
 const cors = require('cors')
 const path = require('path')
 const app = express()
+const PORT = process.env.PORT || 5000;
+
+
 app.use(express.json())
 app.use(cors())
 const serverNumber = 3456
@@ -50,8 +53,8 @@ const {RegUser, getAllUserInfo, checkingPassword} = require('./controller.js')
 app.get('/usernames',   getAllUserInfo)
 app.post('/usernames', RegUser)
 app.post('/verfy',checkingPassword)
-app.listen(serverNumber, () => { cl(`running on port ${serverNumber}
+app.listen(PORT, () => { cl(`running on port ${PORT}
 heres a cute copy paste so its easy to get to
- localhost:${serverNumber} `)})
+ localhost:${PORT} `)})
 // git remote -v
 // heroku git:remote -a toemailazari
