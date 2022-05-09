@@ -25,7 +25,7 @@ app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '/emailsite/main.js'))
     // cl('We got the JavaScript Through')
 })
-app.get('/', (req, res) => {
+app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, '/Register/Register.html'))
     // cl('HTML RegisterPage Sent To Server')
 })
@@ -37,7 +37,7 @@ app.get('/js2', (req, res) => {
     res.sendFile(path.join(__dirname, '/Register/Register.js'))
     // cl('JavaScript For RegisterPage Sent To Server')
 })
-app.get('/Login', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/Login/Login.html'))
     // cl('HTML Log-in Page Sent To Server')
 })
@@ -65,6 +65,6 @@ heres a cute copy paste so its easy to get to
 
 // git init
 // git add .
-// git commit -m "CHANGED a get to have Login"
+// git commit -m "switched home for register to log-in"
 // git push heroku master
 // DONE 
