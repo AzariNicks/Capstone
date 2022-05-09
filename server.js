@@ -26,28 +26,28 @@ app.get('/js', (req, res) => {
     // cl('We got the JavaScript Through')
 })
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Register/Register.html'))
+    res.sendFile(path.join(__dirname, '/emailsite/Register.html'))
     cl('HTML RegisterPage Sent To Server')
 })
 app.get('/style2', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Register/Register.css'))
+    res.sendFile(path.join(__dirname, '/emailsite/Register.css'))
     cl('CSS For HtmlPage Sent To Server')
 })
 app.get('/js2', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Register/Register.js'))
+    res.sendFile(path.join(__dirname, '/emailsite/Register.js'))
     cl('JavaScript For RegisterPage Sent To Server')
 })
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Anythinelse/Login.html'))
+    res.sendFile(path.join(__dirname, '/emailsite/Login.html'))
      cl('HTML Log-in Page Sent To Server')
 })
 app.get('/style3', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Anythinelse/Login.css'))
-    cl('HTML Log-in Page Sent To Server')
+    res.sendFile(path.join(__dirname, '/emailsite/Login.css'))
+    cl('Css Log-in Page Sent To Server')
 })
 app.get('/js3', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Anythinelse/Login.js'))
-    cl('HTML Log-in Page Sent To Server')
+    res.sendFile(path.join(__dirname, '/emailsite/Login.js'))
+    cl('Javascript Log-in Page Sent To Server')
 })
 const {RegUser, getAllUserInfo, checkingPassword} = require('./controller.js')
 
@@ -65,7 +65,7 @@ heres a cute copy paste so its easy to get to
 /*
 git init
 git add .
-git commit -m "remove static added procfile"
+git commit -m "made all folders useless"
 git push heroku master
 
 
