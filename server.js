@@ -38,7 +38,7 @@ app.get('/js2', (req, res) => {
     cl('JavaScript For RegisterPage Sent To Server')
 })
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '/emailsite/Login.html'))
+    res.sendFile(path.join(__dirname, '/emailsite/test.html'))
      cl('HTML Log-in Page Sent To Server')
 })
 app.get('/style3', (req, res) => {
@@ -65,7 +65,7 @@ heres a cute copy paste so its easy to get to
 /*
 git init
 git add .
-git commit -m "madehtml"
+git commit -m "madehtml2"
 git push heroku master
 
 
