@@ -37,7 +37,7 @@ app.get('/js2', (req, res) => {
     res.sendFile(path.join(__dirname, '/Register/Register.js'))
     cl('JavaScript For RegisterPage Sent To Server')
 })
-app.get('/login', (req, res) => {
+app.get('/log-in', (req, res) => {
     res.sendFile(path.join(__dirname, '/Login/Login.html'))
      cl('HTML Log-in Page Sent To Server')
 })
@@ -67,7 +67,7 @@ git init
 git add .
 git commit -m "changed email to accept anon"
 git push heroku master
-DONE
+
 
 
 
