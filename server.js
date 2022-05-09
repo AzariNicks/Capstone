@@ -38,7 +38,7 @@ app.get('/js2', (req, res) => {
     cl('JavaScript For RegisterPage Sent To Server')
 })
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Login/Login.html'))
+    res.sendFile(path.join(__dirname, 'Capstone/Login/Login.html'))
      cl('HTML Log-in Page Sent To Server')
 })
 app.get('/style3', (req, res) => {
@@ -65,6 +65,6 @@ heres a cute copy paste so its easy to get to
 
 // git init
 // git add .
-// git commit -m "switched back"
+// git commit -m "added the phrase capstone to the login"
 // git push heroku master
 // DONE 
