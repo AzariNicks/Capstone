@@ -40,7 +40,7 @@ axios.get('/usernames')
                         message: mailcont.value,
                         user_email: `Anon`
                 })
-                alert(`${UserName} You've sent the email as ${Email}`)
+                // alert(`${UserName} You've sent the email as ${Email}`)
         
         
                     .then( (res) => {console.log('Nice Everything is working' , res.status , res.text)})
