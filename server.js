@@ -68,7 +68,7 @@ git add .
 git commit -m "changed directions "
 git push heroku master
 
-d
+
 
 
 */ 
