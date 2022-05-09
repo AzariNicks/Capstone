@@ -39,7 +39,7 @@ axios.post(`${BaseUrl}/usernames`,body)
     
    if(typeof res.data === 'string'){alert(res.data)} 
    else{
-         window.location.href = "https://toemailazari.herokuapp.com/log-in"
+         window.location.href = "https://toemailazari.herokuapp.com/Login"
         console.log(res.data)
         .status(200).send(res.data)}
 })
