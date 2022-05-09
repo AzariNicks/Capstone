@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3456;
 app.use(express.json())
 app.use(cors())
 const serverNumber = 3456
-app.use(express.static(path.join(__dirname, 'capstone')))
+// app.use(express.static(path.join(__dirname, 'capstone')))
 app.get('/email', (req, res) => {
     res.sendFile(path.join(__dirname, '/emailsite/main.html'))
     cl('We got the html through')
@@ -65,7 +65,7 @@ heres a cute copy paste so its easy to get to
 /*
 git init
 git add .
-git commit -m "changed name"
+git commit -m "remove static added procfile"
 git push heroku master
 
 
