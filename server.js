@@ -38,7 +38,7 @@ app.get('/js2', (req, res) => {
     cl('JavaScript For RegisterPage Sent To Server')
 })
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Capstone/Login/Login.html'))
+    res.sendFile(path.join(__dirname, '/Login/Login.html'))
      cl('HTML Log-in Page Sent To Server')
 })
 app.get('/style3', (req, res) => {
