@@ -2,7 +2,7 @@ const cl = (TheThingYouWantToConsoleLog) => {console.log(TheThingYouWantToConsol
 const cl2 = () => { cl('hello this thing is workings')}
 const usernameInput = document.getElementById('username')
 const passwordInput = document.getElementById('SuperSecret')
-
+const BaseUrl = `https://toemailazari.herokuapp.com`
 
 
 
@@ -22,7 +22,7 @@ event.preventDefault()
     }
     
 
-axios.post(`http://localhost:3456/verfy`, body )
+axios.post(`${BaseUrl}/verfy`, body )
 .then((res,req)  => {
   
     if((typeof res.data) === 'string'){
@@ -33,20 +33,20 @@ axios.post(`http://localhost:3456/verfy`, body )
 {   
         let number = res.data
               window.localStorage.setItem('Number', parseInt(number))
-              window.location.href = "http://www.localhost:3456/email"}
+              window.location.href = "/email"}
 })
 .catch(err => {
     console.log(err)
 })
 })
 
-const anonButton = document.getElementById("AnonLog-in")
-anonButton.addEventListener('click', cl2)
+// const anonButton = document.getElementById("AnonLog-in")
+// anonButton.addEventListener('click', cl2)
 
-document.getElementById('linktoRegister').addEventListener('click', (event) => {
+document.getElementById('Register').addEventListener('click', (event) => {
     event.preventDefault()
     
-    window.location.href = "http://www.localhost:3456/"
+    window.location.href = "/"
     
 })
 
