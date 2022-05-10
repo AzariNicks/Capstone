@@ -14,26 +14,30 @@ axios.get('/usernames')
   
     let ThisUser = res.data[UserID]
    const {Name,Email,UserName} = ThisUser 
-   
-    cl(Name)
-    cl(Email)
-    cl(UserName)
-    submit.addEventListener('click' , event => {event.preventDefault()
+     submit.addEventListener('click' , event => {event.preventDefault()
         // console.log(`right now you have the stuff commeted out but this would email you ${mailcont.value}`)
-                emailjs.send('Azari_emailServer', 'contact_form' , {
-                from_name:Name,
-                message: mailcont.value,
-                user_email: Email
-        })
-        alert(`${UserName} You've sent the email as ${Email}`)
+                
+        
+        
+        if(mailcont.value < 1){alert('You Need To Have Some Mail TO Send')}
+        else{  
+            emailjs.send('Azari_emailServer', 'contact_form' , {
+            from_name:Name,
+            message: mailcont.value,
+            user_email: Email
+    })
+    alert(`${UserName} You've sent the email as ${Email}`)
+        
 
+        .then( (res) => {console.log('Nice Everything is working' , res.status , res.text)})
+        , () => {console.log('Bruh its not working', error())}
+    }
+})
+})
 
-            .then( (res) => {console.log('Nice Everything is working' , res.status , res.text)})
-            , () => {console.log('Bruh its not working', error())}
-        })}
-     
-)
+        
+              
 
-
+    
 
 // service id Azari_emailServer
