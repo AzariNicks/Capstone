@@ -26,27 +26,27 @@ app.get('/js', (req, res) => {
     // cl('We got the JavaScript Through')
 })
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/emailsite/Register.html'))
+    res.sendFile(path.join(__dirname, '/Register/Register.html'))
     cl('HTML RegisterPage Sent To Server')
 })
 app.get('/style2', (req, res) => {
-    res.sendFile(path.join(__dirname, '/emailsite/Register.css'))
+    res.sendFile(path.join(__dirname, '/Register/Register.css'))
     cl('CSS For HtmlPage Sent To Server')
 })
 app.get('/js2', (req, res) => {
-    res.sendFile(path.join(__dirname, '/emailsite/Register.js'))
+    res.sendFile(path.join(__dirname, '/Register/Register.js'))
     cl('JavaScript For RegisterPage Sent To Server')
 })
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '/emailsite/test.html'))
+    res.sendFile(path.join(__dirname, '/Login/test.html'))
      cl('HTML Log-in Page Sent To Server')
 })
 app.get('/style3', (req, res) => {
-    res.sendFile(path.join(__dirname, '/emailsite/Login.css'))
+    res.sendFile(path.join(__dirname, '/Login/Login.css'))
     cl('Css Log-in Page Sent To Server')
 })
 app.get('/js3', (req, res) => {
-    res.sendFile(path.join(__dirname, '/emailsite/Login.js'))
+    res.sendFile(path.join(__dirname, '/Login/Login.js'))
     cl('Javascript Log-in Page Sent To Server')
 })
 const {RegUser, getAllUserInfo, checkingPassword} = require('./controller.js')
@@ -65,7 +65,7 @@ heres a cute copy paste so its easy to get to
 /*
 git init
 git add .
-git commit -m "movedtotest"
+git commit -m "WorkingFixedFolders"
 git push heroku master
 
 
