@@ -65,7 +65,7 @@ heres a cute copy paste so its easy to get to
 /*
 git init
 git add .
-git commit -m "Fixing Css"
+git commit -m "MadeCssAddedFuncButtons"
 git push heroku master
 
 
