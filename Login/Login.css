@@ -1,0 +1,62 @@
+body {
+    background-color:#F5B841;
+    text-align: center;
+}
+#RegBox{
+    background-color:#6A041D;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    gap:25% ;
+    flex-direction: column;
+    padding-left:4%;
+    padding-top: 5%;
+    padding-right: 4%;
+    padding-bottom: 0%;
+    position: relative; left: 23% ;top:100px;
+    align-content: space-between;
+    align-self: center;
+    font-size:40px;
+    font-family: 'Helvetica Neue', sans-serif;
+    outline: auto;
+    box-shadow:rgb(247, 0, 0);
+    box-shadow: 100px;
+    
+}
+#Subtitle{
+    padding-top: 0%;
+    align-self: center;
+    align-content: center;
+    width: 100%;
+    background-color:#F4FF52;
+    outline-style:solid;
+    outline-color:#1E2EDE ;
+    outline-width: 3px;
+}
+#Title{
+ 
+  
+    position: relative;top:-20px;left: 0%; right: 25%;
+   
+   
+
+}
+#box{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    position: absolute;top: -10px; left: 0px; 
+    background-color:#F4FF52;
+    outline-style:solid;
+    outline-color:#1E2EDE ;
+    outline-width: 3px;
+
+}
+#Register{
+    position: relative;bottom: 20px;
+    color: #4853ca;
+    font-size:14px;
+  text-decoration: underline;
+ 
+
+}
