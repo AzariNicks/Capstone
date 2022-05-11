@@ -1,4 +1,16 @@
 body {
-background-color: red;
-
+    background-color:#F5B841;
+    text-align: center;
+}
+#wholeform{
+    width: 50%;
+   height: 50%;
+   display: flex;
+   position:absolute;top: 20%;left: 25%;right: 20%;
+   flex-direction: column;
+   background-color:#6A041D;
+   padding: 10px;
+   text-align: center;
+   -ms-flex-item-align: center;
+   gap: 40px;
 }

@@ -1,5 +1,6 @@
 body{
     background-color:#F5B841;
+    text-align: center;
 }
 #content {
     width: 98.4%;
@@ -18,7 +19,7 @@ body{
             text-align: center;
             -ms-flex-item-align: center;
 }
-#LeftM{     
+/* #LeftM{     
     width: 6%;
     height: 50%;
     display: flex;
@@ -73,4 +74,4 @@ body{
     opacity: .5;
     transform: rotate(65deg) ;
   
-}
+} */

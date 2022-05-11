@@ -1,5 +1,6 @@
 body {
     background-color:#F5B841;
+    text-align: center;
 }
 #RegBox{
     background-color:#6A041D;
@@ -12,8 +13,7 @@ body {
     padding-top: 5%;
     padding-right: 4%;
     padding-bottom: 0%;
-    position: relative; left: 25% ;top:100px;
-    position: relative; left: 25% ;bottom:100px;
+    position: relative; left: 23% ;top:100px;
     align-content: space-between;
     align-self: center;
     font-size:40px;
@@ -27,7 +27,6 @@ body {
     padding-top: 0%;
     align-self: center;
     align-content: center;
-    position: relative;top:-20px;left: 0px; right: 0px;
     width: 100%;
     background-color:#F4FF52;
     outline-style:solid;
@@ -35,23 +34,29 @@ body {
     outline-width: 3px;
 }
 #Title{
-    display: flex;
-    padding-top: 0%;
-    align-self: center;
-    align-content: center;
-    position: relative;top:-20px;left: 10%; right: 20%;
-    width: 100%;
+ 
+  
+    position: relative;top:-20px;left: 0%; right: 25%;
+   
+   
 
 }
 #box{
     display: flex;
     height: 50px;
-       width: 100%;
-    position: absolute;top: -10px; left: -10px; 
+    width: 100%;
+    position: absolute;top: -10px; left: 0px; 
     background-color:#F4FF52;
     outline-style:solid;
     outline-color:#1E2EDE ;
     outline-width: 3px;
 
 }
+#Register{
+    position: relative;bottom: 20px;
+    color: #4853ca;
+    font-size:14px;
+  text-decoration: underline;
+ 
 
+}

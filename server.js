@@ -56,7 +56,7 @@ app.post('/usernames', RegUser)
 app.post('/verfy',checkingPassword)
 app.listen(PORT, () => { cl(`running on port ${PORT}
 heres a cute copy paste so its easy to get to
- localhost:${PORT} `)})
+ www.localhost:${PORT} `)})
 // git remote -v
 // heroku git:remote -a toemailazari
 
@@ -65,7 +65,7 @@ heres a cute copy paste so its easy to get to
 /*
 git init
 git add .
-git commit -m "Adding Css"
+git commit -m "Fixing Css"
 git push heroku master
 
 
