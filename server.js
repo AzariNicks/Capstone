@@ -63,22 +63,11 @@ heres a cute copy paste so its easy to get to
 
 // 2022-05-09T05:50:36.411699+00:00 app[web.1]: Error: ENOENT: no such file or directory, stat '/app/Login/Login.html'
 /*
-
-Fot Heroku
-
 git init
 git add .
-git commit -m "ReRoutedTheTemplate"
+git commit -m "Fixing Css"
 git push heroku master
 
-
-
-For github
-
-git init
-git add .
-git commit -m "ReRoutedTheTemplate"
-git push https://github.com/AzariNicks/Capstone
 
 
 

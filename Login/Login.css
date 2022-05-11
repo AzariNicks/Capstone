@@ -28,10 +28,7 @@ body {
     align-self: center;
     align-content: center;
     width: 100%;
-    background-color:#F4FF52;
-    outline-style:solid;
-    outline-color:#1E2EDE ;
-    outline-width: 3px;
+  
 }
 #Title{
  
@@ -46,10 +43,7 @@ body {
     height: 50px;
     width: 100%;
     position: absolute;top: -10px; left: 0px; 
-    background-color:#F4FF52;
-    outline-style:solid;
-    outline-color:#1E2EDE ;
-    outline-width: 3px;
+    
 
 }
 #Register{

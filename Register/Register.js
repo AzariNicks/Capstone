@@ -15,14 +15,27 @@ const emailInput = document.getElementById(`email`)
 const nameInput = document.getElementById(`name`)
 const submitButton = document.getElementById('submitLogin')
 const Wholeform = document.getElementById('wholeform')
+submitButton.addEventListener('mouseover', () => {
+    submitButton.style.backgroundColor = 'lightblue'})
+submitButton.addEventListener(`mouseout` ,() => {
+
+    submitButton.style.backgroundColor = '#cca8b3'
+})
+
+
+
+
 submitButton.addEventListener('click', (event) => {event.preventDefault()
+    submitButton.style.cursor = 'not-allowed'
+ 
 console.log(nameInput.value,  emailInput.value, usernameInput.value)
 if(nameInput.length < 5 || usernameInput.length < 5 || emailInput.length < 5 || passwordInput < 5){
     alert('All Feilds Required more than 5 characters')
+    submitButton.style.cursor = 'pointer'
     return
 }
 else{
-cl('everything is more than 5')
+cl(`All Fields Met Requirements`)
 
 
 
@@ -47,5 +60,7 @@ axios.post(`${BaseUrl}/usernames`,body)
     console.log(err)
 })
 // fix this when you upload it to thingy 
+cl(`successfull account`)
+submitButton.style.cursor = 'pointer'
 }})
 
