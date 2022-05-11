@@ -27,7 +27,7 @@ submitButton.addEventListener(`mouseout` ,() => {
 
 submitButton.addEventListener('click', (event) => {event.preventDefault()
     submitButton.style.cursor = 'not-allowed'
- 
+    alert(`Doing Things`)
 console.log(nameInput.value,  emailInput.value, usernameInput.value)
 if(nameInput.length < 5 || usernameInput.length < 5 || emailInput.length < 5 || passwordInput < 5){
     alert('All Feilds Required more than 5 characters')
