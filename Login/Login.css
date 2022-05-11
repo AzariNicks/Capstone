@@ -1,56 +1,71 @@
 body {
-    background-color:#F5B841;
+    background-color:#ffffff;
     text-align: center;
+    align-content: center;
 }
 #RegBox{
-    background-color:#6A041D;
-    width: 50%;
-    height: 300px;
-    display: flex;
-    gap:25% ;
-    flex-direction: column;
-    padding-left:4%;
-    padding-top: 5%;
-    padding-right: 4%;
-    padding-bottom: 0%;
-    position: relative; left: 23% ;top:100px;
-    align-content: space-between;
-    align-self: center;
-    font-size:40px;
-    font-family: 'Helvetica Neue', sans-serif;
-    outline: auto;
-    box-shadow:rgb(247, 0, 0);
-    box-shadow: 100px;
-    
+    width: 40%;
+   height: 30%;
+   display: flex;
+   position:absolute;top: 20%;left: 28%;right: 0%;
+   flex-direction: column;
+   background-color:#FFCAD4;
+   padding: 10px;
+   text-align: center;
+   -ms-flex-item-align: center;
+   gap: 10%;
+   outline: 10px;
+   box-shadow: 10px 5px 5px #F4ACB7;
+   border-radius: 30px;
 }
-#Subtitle{
-    padding-top: 0%;
-    align-self: center;
-    align-content: center;
-    width: 100%;
-  
-}
-#Title{
- 
-  
-    position: relative;top:-20px;left: 0%; right: 25%;
-   
-   
 
-}
-#box{
-    display: flex;
-    height: 50px;
-    width: 100%;
-    position: absolute;top: -10px; left: 0px; 
-    
 
-}
+
 #Register{
-    position: relative;bottom: 20px;
+    position: relative;bottom: -150px;
     color: #4853ca;
     font-size:14px;
   text-decoration: underline;
+}
+#username{
+    display: flex;
+    position:absolute;top: 10%;left: 25%;right: 20%;
+    flex-direction: column;
+    background-color:#FFCAD4;
+    padding: 10px;
+    text-align: center;
+    -ms-flex-item-align: center;
+    gap: 10%;
+    outline: 10px;
+    box-shadow: 10px 5px 5px #F4ACB7;
+    border-radius: 30px;
+}
+#SuperSecret{ 
+    display: flex;
+    position:absolute;top: 40%;left: 25%;right: 20%;
+    flex-direction: column;
+    background-color:#FFCAD4;
+    padding: 10px;
+    text-align: center;
+    -ms-flex-item-align: center;
+    gap: 10%;
+    outline: 10px;
+    box-shadow: 10px 5px 5px #F4ACB7;
+    border-radius: 30px;
+}
+#submitLogin{
+    display: flex;
+    position:absolute;top: 70%;left: 25%;right: 20%;
+    flex-direction: column;
+    background-color:#cca8b3;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    -ms-flex-item-align: center;
+    gap: 10%;
+    outline: 10px;
+    box-shadow: 10px 5px 5px #F4ACB7;
+    border-radius: 30px;
+    
  
-
 }

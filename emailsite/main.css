@@ -1,24 +1,57 @@
 body{
-    background-color:#F5B841;
+    background-color:#ffffff;
     text-align: center;
 }
 #content {
-    width: 98.4%;
-    height: 100%;
+    width: 75%;
+    height: 90%;
+    position:relative;left: 10%;right: 0%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:#FFCAD4;
+    padding: 10px;
+    text-align: center;
+    -ms-flex-item-align: center;
+    gap: 10%;
+    outline: 10px;
+    box-shadow: 10px 5px 5px #F4ACB7;
+    border-radius: 30px;
    
 }
-#BigForm{
-             width: 50%;
-            height: 50%;
-            display: flex;
-            position:absolute;top: 20%;left: 20%;right: 20%;
-            flex-direction: column;
-            background-color:#6A041D;
-            padding: 10px;
-            text-align: center;
-            -ms-flex-item-align: center;
+#BigForm{ 
+    width: 40%;
+    height: 50%;
+    display: flex;
+    position:absolute;top: 20%;left: 28%;right: 0%;
+    flex-direction: column;
+    background-color:#FFCAD4;
+    padding: 10px;
+    text-align: center;
+    -ms-flex-item-align: center;
+    gap: 10%;
+    outline: 10px;
+    box-shadow: 10px 5px 5px #F4ACB7;
+    border-radius: 30px;
+             
 }
+#submitform{
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    background-color:#cca8b3;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    -ms-flex-item-align: center;
+    gap: 10%;
+    outline: 10px;
+    box-shadow: 10px 5px 5px #F4ACB7;
+    border-radius: 30px;
+    text-indent: 150px;
+    
+}
+
 /* #LeftM{     
     width: 6%;
     height: 50%;
