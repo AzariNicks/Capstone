@@ -5,7 +5,7 @@ body {
 }
 #RegBox{
     width: 40%;
-   height: 30%;
+   height: 40%;
    display: flex;
    position:absolute;top: 20%;left: 28%;right: 0%;
    flex-direction: column;
@@ -22,7 +22,7 @@ body {
 
 
 #Register{
-    position: relative;bottom: -150px;
+    position: relative;bottom: -66%;
     color: #4853ca;
     font-size:14px;
   text-decoration: underline;
@@ -54,8 +54,7 @@ body {
     border-radius: 30px;
 }
 #submitLogin{
-    display: flex;
-    position:absolute;top: 70%;left: 25%;right: 20%;
+    position:relative;top: 70%;left: 10%;right: 10%;
     flex-direction: column;
     background-color:#cca8b3;
     padding: 10px;
@@ -66,6 +65,7 @@ body {
     outline: 10px;
     box-shadow: 10px 5px 5px #F4ACB7;
     border-radius: 30px;
-    
- 
+    text-align: center;
+    align-content: center;
+    width: 85%;
 }

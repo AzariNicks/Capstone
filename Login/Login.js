@@ -3,10 +3,26 @@ const cl2 = () => { cl('hello this thing is workings')}
 const usernameInput = document.getElementById('username')
 const passwordInput = document.getElementById('SuperSecret')
 const BaseUrl = `https://toemailazari.herokuapp.com`
+const RegLink = document.getElementById('Register')
+RegLink.addEventListener('mouseover', () => {
+    RegLink.style.cursor = 'pointer'})
+RegLink.addEventListener('mouseout', () => {
+    RegLink.style.cursor = 'default'})
+RegLink.addEventListener('mouseover', () => {
+    RegLink.style.color = 'lightblue'})
+RegLink.addEventListener('mouseout', () => {
+    RegLink.style.color = 'blue'})
 
 
 
 
+submitButton = document.getElementById('submitLogin')
+submitButton.addEventListener('mouseover', () => {
+    submitButton.style.backgroundColor = 'lightblue'})
+submitButton.addEventListener(`mouseout` ,() => {
+
+    submitButton.style.backgroundColor = '#cca8b3'
+})
 
 
 

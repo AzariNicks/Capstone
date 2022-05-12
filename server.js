@@ -70,5 +70,8 @@ git push heroku master
 
 
 
-
+git init
+git add .
+git commit -m "MadeCssAddedFuncButtons"
+git push https://github.com/AzariNicks/Capstone
 */ 
